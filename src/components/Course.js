@@ -8,37 +8,38 @@ import { NavBar, Footer } from "./Nav";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export function Course (props) {
-  const colorPalette = palette('tol', props.course.grade_weights.length).map((hex) => '#' + hex);
+  let course = props.course[0];
+  const colorPalette = palette('tol', course.grade_weights.length).map((hex) => '#' + hex);
   return (
     <div>
       <NavBar />
       <div className="container">
         <div className="card">
           <div className="card-header">
-            <h1>{props.course.subject_area} {props.course.course_number} - {props.course.course_title}</h1>
-            <p>{props.course.year} {props.course.quarter} - {props.course.instructor}</p>
+            <h1>{course.subject_area} {course.course_number} - {course.course_title}</h1>
+            <p>{course.year} {course.quarter} - {course.instructor}</p>
           </div>
           <h3 className="card-title">Grade weights:</h3>
           <div className="course-structure">
             <div className="col">
-              <GradeWeightsChart grade_weights={props.course.grade_weights} colorPalette={colorPalette}/>
+              <GradeWeightsChart grade_weights={course.grade_weights} colorPalette={colorPalette}/>
             </div>
             <div className="col">
-              <GradeWeightsTable grade_weights={props.course.grade_weights} colorPalette={colorPalette}/>
+              <GradeWeightsTable grade_weights={course.grade_weights} colorPalette={colorPalette}/>
             </div>
           </div>
           <div className="course-structure">
             <div className="col">
               <h3>Midterm:</h3>
-              <p>{props.course.midterm}</p>
+              <p>{course.midterm}</p>
             </div>
             <div className="col">
               <h3>Final:</h3>
-              <p>{props.course.final}</p>
+              <p>{course.final}</p>
             </div>
           </div>
           <h3>Textbooks:</h3>
-            <TextbooksCards course={props.course} />
+            <TextbooksCards course={course} />
         </div>
       </div>
       <Footer />

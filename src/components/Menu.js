@@ -12,6 +12,22 @@ export function Menu(props) {
         props.search(targetCourse);
     }
 
+    let courses = props.courses.filter(course => {
+        return ((course.subject_area + " " + course.course_number).toLowerCase().includes(targetCourse.toLowerCase())
+                    && targetCourse.length != 0); 
+    });
+
+    let suggest = courses.map(course => {
+        if (course != undefined) {
+            return (
+                <p>
+                    {course.subject_area + " " + course.course_number}
+                </p>
+            );
+        }
+    });
+
+
     return (
         <div>
             <NavBar />
@@ -28,10 +44,12 @@ export function Menu(props) {
                         <div className="input-group">
                             <input type="text" className="form-control" placeholder="Course" onChange={handleChange} aria-label="Course" id="search" />
                             <button className="btn button2 btn-outline-secondary" type="button" onClick={search}>Search</button>
+                            {suggest}
                         </div>
                     </form>
                 </div>
             </div>
+            
             <div className="about-instructions">
                 <div className="col p-0">
                     <div className="card p-0 h-100 instruction-card">

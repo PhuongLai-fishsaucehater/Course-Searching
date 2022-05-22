@@ -8,14 +8,15 @@ function App(props) {
     const navigate = useNavigate();
     const [course, setCourse] = useState(null);
 
+
     const findCourse = (course) => {
         let newCourse = props.courses.filter(element => {
             return (element.subject_area.toUpperCase() + " " +
-                    element.course_number === course.toUpperCase());
+                    element.course_number === course.toUpperCase().trim());
         });
-        console.log(newCourse[0]);
-        setCourse(newCourse[0]);
-        if (course != undefined) {
+        console.log(newCourse);
+        setCourse(newCourse);
+        if (newCourse.length != 0) {
             navigate("/class")
         }
     }
