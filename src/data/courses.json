@@ -1,0 +1,229 @@
+[
+  {
+    "subject_area":"INFO",
+    "course_number":"340",
+    "course_title":"Client-Side Development",
+    "year":"2022",
+    "quarter":"Spring",
+    "instructor":"Tim Carlson",
+    "textbooks":[
+      {
+        "title":"Client-Side Web Development",
+        "author":"Joel Ross and Mike Freeman",
+        "image":"https://info340.github.io/img/cover-img.png",
+        "cost":0,
+        "required":false,
+        "link":"https://info340.github.io/"
+      }
+    ],
+    "grade_weights":[
+      {
+        "group":"Projects",
+        "weight":40
+      },
+      {
+        "group":"Problem Sets",
+        "weight":60
+      }
+    ],
+    "midterm":"None",
+    "final":"Group Project"
+  },
+  {
+    "subject_area":"INFO",
+    "course_number":"380",
+    "course_title":"Information Systems Analysis and Design",
+    "year":"2021",
+    "quarter":"Autumn",
+    "instructor":"Heather Whiteman",
+    "textbooks":[],
+    "grade_weights":[
+      {
+        "group":"AxD Challenge",
+        "weight":20
+      },
+      {
+        "group":"Lab Deliverables",
+        "weight":20
+      },
+      {
+        "group":"Group Project Deliverables",
+        "weight":40
+      },
+      {
+        "group":"Individual Retrospective Deliverables",
+        "weight":10
+      },
+      {
+        "group":"Quizzes",
+        "weight":5
+      },
+      {
+        "group":"Participation",
+        "weight":5
+      },
+      {
+        "group":"Bonus Points!",
+        "weight":5
+      }
+    ],
+    "midterm":"None",
+    "final":"None"
+  },
+  {
+    "subject_area":"INFO",
+    "course_number":"330",
+    "course_title":"Databases and Data Modeling",
+    "year":"2021",
+    "quarter":"Autumn",
+    "instructor":"Greg Hay",
+    "textbooks":[],
+    "grade_weights":[
+      {
+        "group":"Lab Assignments",
+        "weight":20
+      },
+      {
+        "group":"Quizzes",
+        "weight":20
+      },
+      {
+        "group":"Midterm",
+        "weight":15
+      },
+      {
+        "group":"Database Project",
+        "weight":20
+      },
+      {
+        "group":"Final",
+        "weight":25
+      },
+      {
+        "group":"Extra Credit",
+        "weight":0
+      }
+    ],
+    "midterm":"",
+    "final":""
+  },
+  {
+    "subject_area":"INFO",
+    "course_number":"310",
+    "course_title":"Information Assurance and Cybersecurity",
+    "year":"2020",
+    "quarter":"Autumn",
+    "instructor":"Andrew Reifers",
+    "textbooks":[],
+    "grade_weights":[
+      {
+        "group":"Reading",
+        "weight":0
+      },
+      {
+        "group":"Labs",
+        "weight":0
+      },
+      {
+        "group":"Midterm",
+        "weight":20
+      },
+      {
+        "group":"Classroom Participation",
+        "weight":30
+      },
+      {
+        "group":"Final",
+        "weight":20
+      },
+      {
+        "group":"Quizzes",
+        "weight":0
+      },
+      {
+        "group":"Imported Assignments",
+        "weight":0
+      },
+      {
+        "group":"Adjusted Lab",
+        "weight":0
+      }
+    ],
+    "midterm":"",
+    "final":""
+  },
+  {
+    "subject_area":"INFO",
+    "course_number":"350",
+    "course_title":"Information Ethics and Policy",
+    "year":"2021",
+    "quarter":"Spring",
+    "instructor":"Katie Davis",
+    "textbooks":[],
+    "grade_weights":[
+      {
+        "group":"Portfolio",
+        "weight":5
+      },
+      {
+        "group":"Class Preparation",
+        "weight":10
+      },
+      {
+        "group":"Section participation",
+        "weight":15
+      },
+      {
+        "group":"Essay 1",
+        "weight":15
+      },
+      {
+        "group":"Essay 2",
+        "weight":30
+      },
+      {
+        "group":"Peer Reviewing",
+        "weight":5
+      }
+    ],
+    "midterm":"Assesses each student's knowledge of the conceptual foundations of relational database systems and SQL.",
+    "final":"Assesses each student's knowledge of the conceptual foundations of relational database systems and SQL."
+  },
+  {
+    "subject_area":"INFO",
+    "course_number":"290",
+    "course_title":"Orientation to Informatics",
+    "year":"2021",
+    "quarter":"Autumn",
+    "instructor":"Laura Schildkraut",
+    "textbooks":[],
+    "grade_weights":[
+      {
+        "group":"Assignments",
+        "weight":0
+      },
+      {
+        "group":"Reflections",
+        "weight":20
+      },
+      {
+        "group":"Team Project",
+        "weight":40
+      },
+      {
+        "group":"Peer Evaluations",
+        "weight":10
+      },
+      {
+        "group":"Career Prep",
+        "weight":5
+      },
+      {
+        "group":"Takeaway Journal",
+        "weight":25
+      }
+    ],
+    "midterm":"",
+    "final":""
+  }
+]
