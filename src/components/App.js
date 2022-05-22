@@ -15,7 +15,9 @@ function App(props) {
         });
         console.log(newCourse[0]);
         setCourse(newCourse[0]);
-        navigate("/class")
+        if (course != undefined) {
+            navigate("/class")
+        }
     }
 
     return (
