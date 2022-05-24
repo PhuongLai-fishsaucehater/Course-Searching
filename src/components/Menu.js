@@ -39,11 +39,11 @@ export function Menu(props) {
             </header>
             <div className="flex-container">
                 <div className="item-2">
-                    <form>
+                    <form onSubmit={search}>
                         <label className="sr-only text-white" htmlFor="search">Search</label>
                         <div className="input-group">
                             <input type="text" className="form-control" placeholder="Course" onChange={handleChange} aria-label="Course" id="search" />
-                            <button className="btn button2 btn-outline-secondary" type="button" onClick={search}>Search</button>
+                            <button className="btn button2 btn-outline-secondary" type="submit" onClick={search}>Search</button>
                             {suggest}
                         </div>
                     </form>

@@ -68,7 +68,7 @@ function GradeWeightsTable (props) {
         )}
         <tr>
           <td>Total</td>
-          <td>{}</td>
+          <td>{props.grade_weights.map((curr) => curr.weight).reduce((prev, curr) => prev + curr, 0)}%</td>
         </tr>
       </tbody>
     </Table>
