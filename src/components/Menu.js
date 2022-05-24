@@ -8,6 +8,10 @@ export function Menu(props) {
         changeTarget(event.target.value);
     }
 
+    const instruction = () => {
+        props.search("INFO 340");
+    }
+
     const search = () => {
         props.search(targetCourse);
     }
@@ -55,8 +59,8 @@ export function Menu(props) {
                     <div className="card p-0 h-100 instruction-card">
                         <div className="card-body">
                             <h5 className="card-title">Instruction</h5>
-                            <p className="card-text">To use this page, simply put the course name of the course you want to find into the searchbar and press "search". For this version, simply press "search"</p>
-                            <a href="info340.html" className="about-btn btn btn-primary">Go to INFO 340</a>
+                            <p className="card-text">To use this page, simply put the course name of the course you want to find into the searchbar and press "search". For this version, search "INFO" (case insensitive) for further suggestions</p>
+                            <div onClick={instruction} className="about-btn btn btn-primary">Go to INFO 340</div>
                         </div>
                     </div>
                 </div>
