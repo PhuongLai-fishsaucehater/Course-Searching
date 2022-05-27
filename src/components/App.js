@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route, Router, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Router, Routes, useNavigate } from "react-router-dom";
 import { About } from "./About";
 import { Menu } from "./Menu";
 import { Course } from "./Course";
@@ -26,6 +26,7 @@ function App(props) {
             <Route path="/" element={<Menu search={findCourse} courses={props.courses}/>}/>
             <Route path="/About" element={<About />} />
             <Route path="/class" element={<Course course={course} />} />
+            <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
     );
 }

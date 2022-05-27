@@ -18,13 +18,13 @@ export function Menu(props) {
 
     let courses = props.courses.filter(course => {
         return ((course.subject_area + " " + course.course_number).toLowerCase().includes(targetCourse.toLowerCase())
-                    && targetCourse.length != 0); 
+                    && targetCourse.length !== 0); 
     });
 
     let suggest = courses.map(course => {
-        if (course != undefined) {
+        if (course !== undefined) {
             return (
-                <p>
+                <p key={course.course_number.toString()}>
                     {course.subject_area + " " + course.course_number}
                 </p>
             );
@@ -33,7 +33,7 @@ export function Menu(props) {
 
 
     return (
-        <div>
+        <div className="page">
             <NavBar />
             <header>
                 <div className="container">

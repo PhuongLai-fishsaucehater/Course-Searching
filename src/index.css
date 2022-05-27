@@ -7,8 +7,9 @@ a {
     text-decoration: none;
 }
 
-body {
+body, html {
     margin: 0;
+    height: 100%;
 }
 
 .navBar {
@@ -21,32 +22,50 @@ body {
 }
 
 .navBar div {
+    padding: 0rem 1rem;
     flex-basis: auto;
     justify-content: flex-end;
     display: flex;
     align-items: center;
-    padding: 0 5px;
 }
 
 .navBar div:hover {
     background-color: #b7a57a;
 }
 
+.navBar .logo a {
+    display: flex;
+    justify-content: end;
+}
+
 .navBar a {
     color: white;
-    padding: 10px;
+    padding: 0px;
     text-decoration: none;
 }
 
 .navBar .logo {
     margin-left: auto;
-    flex-basis: 5%;
+    flex-basis: 20%;
+    padding-right: 0;
     text-align: center;
-    margin-right: 2%;
+    margin-right: 0;
+}
+
+
+
+.navBar .logo img {
+    width: 4.5rem;
+    height: 3rem;
 }
 
 .navBar .logo:hover {
     background-color: #4b2e83;
+}
+
+.navBar .logo a {
+    width: 100%;
+    height: 100%;
 }
 
 header {
